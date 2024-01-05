@@ -1,1 +1,228 @@
+ * {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 1000px;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+        }
+
+        .form-container div.col {
+            border: 1px solid whitesmoke;
+            padding: 0px 70px;
+            height: inherit;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 1px 1px 5px rgb(227, 226, 226);
+
+        }
+
+        div.col.col-1 {
+            background-color: #1d335c;
+            color: white;
+            border-radius: 5px 0 0 5px;
+
+        }
+
+        div.col.col-1 a {
+            color: white;
+            margin-top: 0;
+            position: absolute;
+            top: 20px;
+        }
+
+        p.pra-choice {
+            font-size: 35px;
+        }
+
+        div.col-inner p:last-child {
+            position: absolute;
+            bottom: 30px;
+        }
+
+        div.col-inner p i {
+            margin-right: 5px;
+        }
+
+        div.col form>p:first-child {
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        div.col form>p:nth-child(2) {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        div.social-profile {
+            display: flex;
+            gap: 5px;
+        }
+
+        .social-profile div.google,
+        .social-profile div.facebook {
+            width: 50%;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgb(164, 161, 161);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-profile div.facebook {
+            background-color: #32589f;
+            color: white;
+        }
+
+        .social-profile img {
+            width: 15%;
+        }
+
+        .social-profile .facebook img {
+            width: 20%;
+        }
+
+        div.or {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        div.or::before,
+        div.or::after {
+            content: '';
+            border-bottom: 1px solid rgb(178, 175, 175);
+            display: inline-block;
+            width: 150px;
+
+        }
+
+        form label {
+            display: block;
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
+
+        div.user-name {
+            display: flex;
+            gap: 10px;
+            padding: 5px 0;
+        }
+
+        div.user-name input {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgb(164, 161, 161);
+        }
+
+        .user-email input,
+        .user-pwd input,
+        div.user-reg-btn input {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgb(164, 161, 161);
+        }
+
+        div.user-email,
+        div.user-pwd {
+            padding: 5px 0;
+        }
+
+        div.user-policy {
+            padding: 5px 0;
+            font-size: 14px;
+
+        }
+
+        div.user-policy a {
+            font-size: 14px;
+            color: black;
+        }
+
+        div.user-reg-btn {
+            padding: 5px 0;
+        }
+
+        div.user-reg-btn input {
+            background-color: #13b5a7;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        div.login-btn a {
+            text-decoration: none;
+            color: #13b5a7;
+        }
+
+        div.login-btn {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media only screen and (max-width:360px) {
+
+            .form-container {
+                width: 400px;
+                height: 100vh;
+                display: block;
+
+            }
+
+            .form-container div.col {
+                padding: 90px 20px;
+                width: 100%;
+                display: block;
+
+            }
+
+            .form-container div.col.col-1 {
+                padding: 120px 40px;
+                width: 100%;
+                display: block;
+
+            }
+
+            div.or::before,
+            div.or::after {
+                width: 120px;
+
+            }
+
+            div.col.col-1 a {
+                top: 40px;
+            }
+
+            div.col-inner p:last-child {
+                bottom: 60px;
+            }
+        }
